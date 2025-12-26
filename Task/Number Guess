@@ -1,0 +1,74 @@
+import 'dart:math';
+import 'package:flutter/material.dart';
+
+class Random extends StatefulWidget {
+  const Random({super.key});
+
+  @override
+  State<Random> createState() => _RandomState();
+}
+
+class _RandomState extends State<Random> {
+  TextEditingController numberController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextFormField(
+                controller: numberController,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  hintText: "Guess number (1 to 10)",
+                  labelText: "Number",
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {
+                  if (numberController.text.isEmpty) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("Enter a number")),
+                    );
+                    return;
+                  }
+
+                  int userNumber = int.parse(numberController.text);
+
+                  // Min & Max check
+                  if (userNumber < 1 || userNumber > 10) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("Number must be between 1 and 10")),
+                    );
+                    return;
+                  }
+
+                  int randomNumber = Random().nextInt(10) + 1;
+
+                  if (userNumber == randomNumber) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("🎉 Correct! Number was $randomNumber")),
+                    );
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("❌ Wrong! Number was $randomNumber")),
+                    );
+                  }
+
+                  numberController.clear();
+                },
+                child: Text("Enter"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
