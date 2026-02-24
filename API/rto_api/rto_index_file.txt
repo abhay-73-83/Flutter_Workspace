@@ -1,0 +1,39 @@
+<?php
+echo "<h2>Abhay RTO APP API</h2>";
+echo "<ul>";
+
+// User API
+echo "<li><a href='abhay/a_add_user.php'>A Add User</a></li>";
+echo "<li><a href='abhay/a_update_user.php'>A Update User</a></li>";
+echo "<li><a href='abhay/a_delete_user.php'>A Delete User</a></li>";
+echo "<li><a href='abhay/a_view_users.php'>A View All Users</a></li>";
+echo "<li><a href='abhay/a_view_user_by_id.php'>A View User By ID</a></li>";
+echo "<li><a href='abhay/a_login_user.php'>A Login User</a></li>";
+
+// Category API
+echo "<li><a href='abhay/a_add_category.php'>A Add Category</a></li>";
+echo "<li><a href='abhay/a_update_category.php'>A Update Category</a></li>";
+echo "<li><a href='abhay/a_delete_category.php'>A Delete Category</a></li>";
+echo "<li><a href='abhay/a_view_categories.php'>A View All Categories</a></li>";
+
+// Office API
+echo "<li><a href='abhay/a_add_office.php'>A Add Office</a></li>";
+echo "<li><a href='abhay/a_update_office.php'>A Update Office</a></li>";
+echo "<li><a href='abhay/a_delete_office.php'>A Delete Office</a></li>";
+echo "<li><a href='abhay/a_view_offices.php'>A View All Offices</a></li>";
+
+// Question API
+echo "<li><a href='abhay/a_add_question.php'>A Add Question</a></li>";
+echo "<li><a href='abhay/a_update_question.php'>A Update Question</a></li>";
+echo "<li><a href='abhay/a_delete_question.php'>A Delete Question</a></li>";
+echo "<li><a href='abhay/a_view_questions.php'>A View All Questions</a></li>";
+echo "<li><a href='abhay/a_view_question_by_id.php'>A View Question By ID</a></li>";
+
+// Test API
+echo "<li><a href='abhay/a_start_test.php'>A Start Test</a></li>";
+echo "<li><a href='abhay/a_submit_answer.php'>A Submit Answer</a></li>";
+echo "<li><a href='abhay/a_get_test_result.php'>A Get Test Result</a></li>";
+echo "<li><a href='abhay/a_view_statistics.php'>A View Statistics</a></li>";
+
+echo "</ul>";
+?>
