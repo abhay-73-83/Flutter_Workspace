@@ -1,0 +1,12 @@
+<?php
+echo "<h2>Abhay WOODNIUM APP API</h2>";
+echo "<ul>";
+
+// User API
+echo "<li><a href='abhay/c_user_signup.php'>C Register User</a></li>";
+echo "<li><a href='abhay/c_user_signin.php'>C Login User</a></li>";
+echo "<li><a href='abhay/c_user_update.php'>C Register User</a></li>";
+echo "<li><a href='abhay/c_user_delete.php'>C Login User</a></li>";
+
+echo "</ul>";
+?>
