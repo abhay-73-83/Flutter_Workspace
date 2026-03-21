@@ -1,0 +1,18 @@
+<?php
+echo "<h2>Abhay WOODNIUM APP API</h2>";
+echo "<ul>";
+
+// User API
+echo "<li><a href='abhay/c_user_signup.php'>C Register User</a></li>";
+echo "<li><a href='abhay/c_user_signin.php'>C Login User</a></li>";
+echo "<li><a href='abhay/c_user_update.php'>C Update User</a></li>";
+echo "<li><a href='abhay/c_user_delete.php'>C Delete User</a></li>";
+
+// Seller API
+echo "<li><a href='abhay/c_seller_signup.php'>C Register Seller</a></li>";
+echo "<li><a href='abhay/c_seller_signin.php'>C Login Seller</a></li>";
+echo "<li><a href='abhay/c_seller_update.php'>C Update Seller</a></li>";
+echo "<li><a href='abhay/c_seller_delete.php'>C Delete Seller</a></li>";
+
+echo "</ul>";
+?>
