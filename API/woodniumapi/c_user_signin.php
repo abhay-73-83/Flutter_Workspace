@@ -1,26 +1,36 @@
 <?php
+include('connect.php');
 
-    include('connect.php');
+// ✅ Get data
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    $email = $_REQUEST["email"];
-    $password = $_REQUEST["password"];
+// ✅ Query
+$sql = "SELECT * FROM abhay_users WHERE email='$email' AND password='$password'";
+$result = mysqli_query($con, $sql);
 
+if(mysqli_num_rows($result) > 0)
+{
+    $user = mysqli_fetch_assoc($result);
 
-    $sql = "select * from abhay_users where email = '$email' and password='$password'";
-    $result=mysqli_query($con,$sql);
-
-
-     $num=mysqli_num_rows($result);
-
-    if($num>0)
-    {
-        $fetch=mysqli_fetch_object($result);
-        echo json_encode(['code'=>200]);
-    }
-    else
-    {
-        echo "0";
-    }
-
-
+    // ✅ Return full user data
+    echo json_encode([
+        "status" => 1,
+        "message" => "Login Success",
+        "data" => [
+            "id" => $user['id'],
+            "name" => $user['name'],
+            "email" => $user['email'],
+            "phone" => $user['phone'],
+            "password" => $user['password']
+        ]
+    ]);
+}
+else
+{
+    echo json_encode([
+        "status" => 0,
+        "message" => "Invalid Email or Password"
+    ]);
+}
 ?>
