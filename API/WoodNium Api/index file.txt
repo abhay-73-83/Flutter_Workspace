@@ -1,0 +1,32 @@
+<?php
+echo "<h2>Abhay WOODNIUM APP API</h2>";
+echo "<ul>";
+
+// Categories API
+echo "<li><a href='abhay/c_categories_add.php'>C Categories Add</a></li>";
+echo "<li><a href='abhay/c_categories_update.php'>C Categories Update</a></li>";
+echo "<li><a href='abhay/c_categories_delete.php'>C Categories Delete</a></li>";
+echo "<li><a href='abhay/c_categories_view.php'>C Categories View</a></li>";
+
+// Product API
+echo "<li><a href='abhay/c_product_add.php'>C Product Add</a></li>";
+echo "<li><a href='abhay/c_product_update.php'>C Product Update</a></li>";
+echo "<li><a href='abhay/c_product_delete.php'>C Product Delete</a></li>";
+echo "<li><a href='abhay/c_product_view.php'>C Product View</a></li>";
+
+// Wishlist Product API
+echo "<li><a href='abhay/c_wishlist_product.php'>C Wishlist Product Add & Remove</a></li>";
+echo "<li><a href='abhay/c_wishlist_product_view.php'>C Wishlist Product View</a></li>";
+
+// Inquiry API
+echo "<li><a href='abhay/c_inquiry_create_user.php'>C Inquiry Create User</a></li>";
+echo "<li><a href='abhay/c_inquiry_update_status_seller.php'>C Inquiry Update Status Seller</a></li>";
+echo "<li><a href='abhay/c_inquiry_view_seller.php'>C Inquiry View Seller</a></li>";
+echo "<li><a href='abhay/c_inquiry_view_user.php'>C Inquiry View User</a></li>";
+
+// Rating Product API
+echo "<li><a href='abhay/c_rating_product_add.php'>C Rating Product Add</a></li>";
+echo "<li><a href='abhay/c_rating_product_view.php'>C Rating Product View</a></li>";
+
+echo "</ul>";
+?>
