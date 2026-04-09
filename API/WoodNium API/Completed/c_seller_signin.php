@@ -23,9 +23,9 @@ if(mysqli_num_rows($result) > 0)
             "name" => $seller['name'],
             "email" => $seller['email'],
             "phone" => $seller['phone'],
-            "password" => $seller['password']
-            "shop_name" => $seller['shop_name'];
-            "pincode" => $seller['pincode'];
+            "password" => $seller['password'],
+            "shop_name" => $seller['shop_name'],
+            "pincode" => $seller['pincode'],
         ]
     ]);
 }
