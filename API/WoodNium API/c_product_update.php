@@ -7,7 +7,7 @@ if (!is_dir($upload_path)) {
     mkdir($upload_path, 0777, true);
 }
 
-$base_url = 'http://' . $_SERVER['SERVER_NAME'] . '/woodniumapi/' . $upload_path;
+$base_url = 'http://' . $_SERVER['SERVER_NAME'] . '/abhay/' . $upload_path;
 
 // ------------------ POST DATA ------------------
 $id          = $_POST['id'] ?? '';
