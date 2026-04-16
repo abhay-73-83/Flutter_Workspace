@@ -11,7 +11,7 @@ $upload_path = 'uploads/categories/';
 
 //creating the upload url
 // $upload_url = $upload_path;
-$upload_url = 'https://'.$_SERVER['SERVER_NAME'] . "/woodniumapi/" . $upload_path;
+$upload_url = 'https://'.$_SERVER['SERVER_NAME'] . "/abhay/" . $upload_path;
 
 //echo $upload_url;
 
