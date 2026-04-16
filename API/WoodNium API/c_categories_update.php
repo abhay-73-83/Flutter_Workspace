@@ -10,7 +10,7 @@ $upload_path = 'uploads/categories/';
  $server_ip = gethostbyname(gethostname());
 
 // upload URL
-$upload_url = 'https://' . $_SERVER['SERVER_NAME'] . "/woodniumapi/" . $upload_path;
+$upload_url = 'https://' . $_SERVER['SERVER_NAME'] . "/abhay/" . $upload_path;
 
 // getting data from request
 $id = $_REQUEST['id'];
